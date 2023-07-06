@@ -1,0 +1,56 @@
+java 4 applications:
+1.standalone--calci,ms office,notepad
+2.web app-- client-server(facebook)
+3.distributed app-- interaction btw fb and irctc(server of fb(java) with server of irctc(.net))
+4.mobile app-- android(java tech),ios,sym-nokia(.net)
+
+cmd-
+ide-user interface 
+
+setting the env var:
+...
+
+public class first{
+//data members
+int x=10;//instance var
+void sample()
+{
+System.out.println("sample method");
+}
+public static void main(String args[])
+{
+first obj=new first();
+obj.sample();
+int x=10;//local variables
+int y=20;
+int z;
+z=x+y;
+System.out.println("sum of"+x+"and"+y+"is"+z);
+System.out.println("hello,welcome to ibm");
+}
+
+//member functions
+}
+
+filename:first.java
+type:all files
+
+to compile:javac
+to run(execute):java
+
+cd--to change the directory
+dir--current directory
+
+
+3 types of variables:
+1.instance-inside the classsss,outside the method
+          we have to create objectto access the instance variable
+2.static- inside the class but outside of the method 
+         with static keyword(heap memory)
+         to save the memory and to reuse the same values variables
+         static is used. 
+         static var can be accessed without the object declaration by using its class 
+
+3.local
+
+

@@ -1,0 +1,128 @@
+abstraction: hiding unnecessary properties
+
+-abstract class: the class in which that contains one abstract method. we have to define that class as abstract
+abstract method means no body(no logic) only defination is there to create the blueprint.
+we cannot create the object for the abstract class directly. we use extends to inherit.
+
+-interfaces:to achieve pure abstraction interface class has only abstract methods. we use implements to inherit.
+
+
+
+exception:disrupts the normal flow
+built-in:
+-checked:compile time
+
+-unchecked:runtime 
+try-catch
+
+
+Stream:
+byte stream: audio, video 
+Character stream:
+-writer
+-reader
+casting is not needed when buffered reader is used
+
+buffer is used to increase the performance
+
+fileInputStream for read the file
+fileOutputStream is for writing into the file
+
+fileInputStream and fileOutputStream
+supports byte stream so the string should be converted into byte
+
+String s="new file"
+byte b[]=s.getBytes(); 
+
+Collection: its a framework, it contains the predefined classes and readymade  methods. work with group of elements
+but in arrays group of values.
+cons of arrays:fixed size and homogeneous values.
+pros of collection: has growable size, both homo and hetero values
+
+
+
+collection:has 3 interfaces
+1)set 2)list 3)queue
+
+set:it does not allow duplicate values, only few allows homo and hetero max;homo 
+hashset:no duplicate
+        no order insertion
+        fast accessibility of values 
+treeset:no duplicate
+        sorted order
+        homogeneous values
+
+list:
+-arraylist:homo hetero and duplicate values are allowed. searching is fast.
+-linkedlist:node mechanism ,searching is slow
+-vector
+-stack
+
+queue
+
+map:
+hashmap-very fast accessable
+        allow duplicate values
+        no order insertion
+        homo hetero are allowed
+
+treemap-sorted order
+        key should be home
+        duplicates are allowed
+
+
+
+thread:if we have 2 modules to execute then we want to speed up the process, we use thread.
+
+1>>  *extend thread class
+*run()-override the run method
+*object creation
+*start()
+
+if we call run() method directly without the start() run treats it has normal method not as thread.
+
+
+
+2>> *implement the runnable(single absolete method) interface
+*override the run() method
+*object creation
+*do registration with thread
+*start() method
+
+2nd one is very efficient
+
+
+class a{
+}
+class b{
+}
+class c{
+}
+class d extends a,b,c //not possible
+
+
+
+class x{
+}
+interface y{
+}
+interface z{
+}
+class c extends x implements y,z // possible(multiple inheritance is possible in interfaces)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

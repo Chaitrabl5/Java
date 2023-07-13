@@ -1,0 +1,47 @@
+encapsualation:it prevents understanding of data
+bind the variables and methods
+prevents mishandling of data
+implement the behavior
+
+
+abstraction:identifying the behaviour for an object, observal property
+
+generic type
+ t can be int double char
+public interface minmax<t>{
+t max()
+t min()
+}
+
+ implements comparable= to compare the values
+Integer,Character,Double should be used in generic type
+
+
+list list1=new Arraylist();
+typesafe:
+list<product> list= new ArrayList<>();
+
+
+
+
+1)fiter=reduce unwanted data=>predicate.
+2)map-convert from one type to another type.
+3)reduce
+price>50k==::
+doubleSummary stats
+list.stream().filter(p->p.getprice()>=500000.0).mapToDouble(Product::getPrice).summaryStatistics();
+
+
+avg==::stats.getAverage();
+
+stats.getSum();
+stats.getMin();
+
+
+Stream=hold the water
+filter = remove the unwanted data
+
+
+Product::getPrice or
+p->p.getPrice() == both are same
+

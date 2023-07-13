@@ -1,0 +1,78 @@
+Java 8
+
+lambda expression
+functional interface
+default methods in interface
+static method in the interface
+
+
+
+
+lambda expression:it is an anonymous function. it's 1)nameless,2) without return type 3)without datatype and 3)without any modifier.
+
+
+-------------------
+*concise the code i.e., reduce the code
+--------------------
+Case 1:
+public void display() //normal method
+{
+System.out.print("hello world");
+}
+
+final:
+()->{System.out.println("hello world");};
+----------------------------------------------
+Case2:
+public int add(int x,int y) //normal method
+{
+int z;
+z=x+y;
+return z;
+}
+
+
+( x, y)-> 
+{
+
+
+return x+y;
+}
+
+final:
+(x,y)->x+y;
+
+------------------------------------------------
+Case 3:
+public int add(int x)// normal method
+{
+int result;
+result=x*x;
+return result;
+}
+
+(x)// normal method
+{
+                  
+
+return x*x;
+}
+
+final:
+x->x*x;
+-----------------------------------------------
+
+functional interface:An interface which contains single abstract method. bcz when lambda function is written it does not get confused and directly calls the single presented method.
+thread(Runnable)
+
+===============================================
+
+default methods in interface:from java 8 there are concrete methods called default methods
+
+
+
+
+===============================================
+streams- i/o stream filter
+optional class- to deal with nullpointer expression
+
